@@ -1,0 +1,10 @@
+/** JavaDoc comment */
+public class Prueba {
+    public static void main(String[] args) {
+        int x = 0xFF;    // hex
+        double pi = 3.14;
+        String s = "mundo";
+        if (x == 255 && pi > 0.0) { x++; }
+        @  // <- error léxico intencional
+    }
+}
