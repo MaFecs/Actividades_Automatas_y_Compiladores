@@ -1,0 +1,76 @@
+/** JavaDoc comment */
+public class Prueba {
+    public static void main(String[] args) {
+        int x = 0xFF;    // hex
+        double pi = 3.14;
+        String s = "mundo";
+        if (x == 255 && pi > 0.0) { x++; }
+        @  // <- error léxico intencional
+    }
+}
+package pck_acounts;
+
+import java.io.Serializable;
+import pck_fecha.Fecha;
+
+public class DebitCard extends Account implements Serializable {
+        private static final long serialVersionUID = 1L;
+    
+    private double balanceLimit;
+    private double currency;
+    private int noAddition;
+
+    public DebitCard(int noAccount, String branch, String joint, double minBalance, Fecha cutDate, double balanceLimit, double currency, int noAddition) {
+        super(noAccount, branch, joint, minBalance, cutDate);
+        this.balanceLimit = balanceLimit;
+        this.currency = currency;
+        this.noAddition = noAddition;
+    }
+
+    public DebitCard(int noAccount, String branch, String joint, double minBalance, int dC, int mC, int yC, double balanceLimit, double currency, int noAddition) {
+        super(noAccount, branch, joint, minBalance, dC, mC, yC);
+        this.balanceLimit = balanceLimit;
+        this.currency = currency;
+        this.noAddition = noAddition;
+    }
+
+    public DebitCard() {
+        this.balanceLimit = 0.0;
+        this.currency = 0.0;
+        this.noAddition = 0;
+    }
+
+    public void setBalanceLimit(double balanceLimit) {
+        this.balanceLimit = balanceLimit;
+    }
+
+    public void setCurrency(double currency) {
+        this.currency = currency;
+    }
+
+    public void setNoAddition(int noAddition) {
+        this.noAddition = noAddition;
+    }
+
+    public double getBalanceLimit() {
+        return balanceLimit;
+    }
+
+    public double getCurrency() {
+        return currency;
+    }
+
+    public int getNoAddition() {
+        return noAddition;
+    }
+    
+    @Override
+    public String getData(){
+        return super.getData() + 
+                "\n\n-- Debit card --" +
+                "\nBalance Limit: $" + getBalanceLimit() +
+                "\nCurrency: $" + getCurrency() +
+                "\nNumber Addition: " + getNoAddition();
+    }
+
+}
