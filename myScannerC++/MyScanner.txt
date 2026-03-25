@@ -1,0 +1,220 @@
+KEYWORD -> #include
+ OPERATOR -> <
+IDENTIFIER -> iostream
+OPERATOR -> >
+
+
+KEYWORD -> using
+ KEYWORD -> namespace
+ IDENTIFIER -> std
+SEPARATOR -> ;
+
+
+BLOCKCOMMENT -> /* j. Bloque de comentarios
+   Este bloque debe ser reconocido como un solo token 
+   de tipo BLOCKCOMMENT.*/
+
+   
+LINECOMMENT -> // i. Comentario de una línea: Esto es un LINECOMMENT
+
+KEYWORD -> int
+ KEYWORD -> main
+SEPARATOR -> (
+SEPARATOR -> )
+ SEPARATOR -> {
+
+LINECOMMENT -> // b. Identificadores (Variables)
+
+    KEYWORD -> int
+ IDENTIFIER -> mi_variable
+ OPERATOR -> =
+ INTEGERLIT -> 10
+SEPARATOR -> ;
+
+    KEYWORD -> float
+ IDENTIFIER -> _temp2
+ OPERATOR -> =
+ FLOATLIT -> 0.5
+SEPARATOR -> ;
+
+    IDENTIFIER -> long
+ IDENTIFIER -> contador_123
+ OPERATOR -> =
+ INTEGERLIT -> 100L
+SEPARATOR -> ;
+
+LINECOMMENT -> // c. Números enteros (Integer Literals)
+
+    KEYWORD -> int
+ IDENTIFIER -> entero
+ OPERATOR -> =
+ INTEGERLIT -> 12345
+SEPARATOR -> ;
+
+    KEYWORD -> int
+ IDENTIFIER -> con_separador
+ OPERATOR -> =
+ INTEGERLIT -> 1'000'000
+SEPARATOR -> ;
+ LINECOMMENT -> // C++14
+
+LINECOMMENT -> // d. Números en diferentes sistemas y flotantes
+
+    KEYWORD -> int
+ IDENTIFIER -> hexa
+ OPERATOR -> =
+ HEXADECIMALLIT -> 0x1A6F
+SEPARATOR -> ;
+         LINECOMMENT -> // Hexadecimal
+
+    KEYWORD -> int
+ IDENTIFIER -> octal
+ OPERATOR -> =
+ OCTALLIT -> 0755
+SEPARATOR -> ;
+          LINECOMMENT -> // Octal
+
+    KEYWORD -> int
+ IDENTIFIER -> binario
+ OPERATOR -> =
+ BINARYLIT -> 0b101010
+SEPARATOR -> ;
+    LINECOMMENT -> // Binario
+
+    KEYWORD -> float
+ IDENTIFIER -> pi
+ OPERATOR -> =
+ FLOATLIT -> 3.1415f
+SEPARATOR -> ;
+        LINECOMMENT -> // Flotante estándar
+
+    KEYWORD -> double
+ IDENTIFIER -> cientifico
+ OPERATOR -> =
+ FLOATLIT -> 2.1e-10
+SEPARATOR -> ;
+ LINECOMMENT -> // Notación científica
+
+    KEYWORD -> float
+ IDENTIFIER -> punto
+ OPERATOR -> =
+ FLOATLIT -> 0.5
+SEPARATOR -> ;
+      
+LINECOMMENT -> // e. Cadenas de caracteres (Strings)
+
+    KEYWORD -> const
+ KEYWORD -> String
+ IDENTIFIER -> mensaje
+ OPERATOR -> =
+ STRINGLIT -> "Hola Mundo \"con escapes\" \n"
+SEPARATOR -> ;
+
+LINECOMMENT -> // f. Caracteres (Chars)
+
+    KEYWORD -> char
+ IDENTIFIER -> letra
+ OPERATOR -> =
+ CHARLIT -> 'A'
+SEPARATOR -> ;
+
+    KEYWORD -> char
+ IDENTIFIER -> escape
+ OPERATOR -> =
+ CHARLIT -> '\n'
+SEPARATOR -> ;
+
+LINECOMMENT -> // g. Operadores (Aritméticos, lógicos, relacionales, asignación)
+
+    KEYWORD -> int
+ IDENTIFIER -> calc
+ OPERATOR -> =
+ SEPARATOR -> (
+INTEGERLIT -> 5
+ OPERATOR -> +
+ INTEGERLIT -> 3
+SEPARATOR -> )
+ OPERATOR -> *
+ INTEGERLIT -> 2
+ OPERATOR -> /
+ INTEGERLIT -> 1
+SEPARATOR -> ;
+
+    IDENTIFIER -> bool
+ IDENTIFIER -> comp
+ OPERATOR -> =
+ SEPARATOR -> (
+INTEGERLIT -> 10
+ OPERATOR -> ==
+ INTEGERLIT -> 10
+SEPARATOR -> )
+ OPERATOR -> &&
+ SEPARATOR -> (
+INTEGERLIT -> 5
+ OPERATOR -> !=
+ INTEGERLIT -> 2
+SEPARATOR -> )
+ OPERATOR -> ||
+ OPERATOR -> !
+SEPARATOR -> (
+IDENTIFIER -> true
+SEPARATOR -> )
+SEPARATOR -> ;
+
+    IDENTIFIER -> mi_variable
+ OPERATOR -> +=
+ INTEGERLIT -> 5
+SEPARATOR -> ;
+
+    IDENTIFIER -> mi_variable
+ OPERATOR -> <<
+OPERATOR -> =
+ INTEGERLIT -> 1
+SEPARATOR -> ;
+
+    KEYWORD -> int
+OPERATOR -> *
+ IDENTIFIER -> ptr
+ OPERATOR -> =
+ OPERATOR -> &
+IDENTIFIER -> mi_variable
+SEPARATOR -> ;
+
+LINECOMMENT -> // h. Separadores
+
+    SEPARATOR -> {
+
+        KEYWORD -> int
+ IDENTIFIER -> arreglo
+SEPARATOR -> [
+SEPARATOR -> ]
+ OPERATOR -> =
+ SEPARATOR -> {
+INTEGERLIT -> 1
+SEPARATOR -> ,
+ INTEGERLIT -> 2
+SEPARATOR -> ,
+ INTEGERLIT -> 3
+SEPARATOR -> }
+SEPARATOR -> ;
+
+        IDENTIFIER -> cout
+ OPERATOR -> <<
+ IDENTIFIER -> arreglo
+SEPARATOR -> [
+INTEGERLIT -> 0
+SEPARATOR -> ]
+ OPERATOR -> <<
+ STRINGLIT -> ";"
+ OPERATOR -> <<
+IDENTIFIER -> endl
+SEPARATOR -> ;
+
+    SEPARATOR -> }
+
+    KEYWORD -> return
+ INTEGERLIT -> 0
+SEPARATOR -> ;
+
+SEPARATOR -> }
+
