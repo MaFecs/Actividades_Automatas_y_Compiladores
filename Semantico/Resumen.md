@@ -39,7 +39,8 @@ https://docs.google.com/forms/d/e/1FAIpQLSejF8Zgb2b7CXiHNgm9KSgWEgrftJnLjA-yqxSV
 ### Resultados del cuestionario
 <img width="1919" height="907" alt="Resultado_Fernanda" src="https://github.com/user-attachments/assets/72808eec-4423-44b7-bc9a-10e79ab20a56" />
 <img width="702" height="1600" alt="Resultado_David" src="https://github.com/user-attachments/assets/aef6481b-6922-488f-8497-c61480d355f6" />
-<img width="702" height="1600" alt="Resultado_David" src="https://github.com/user-attachments/assets/7bbe810b-e607-45a7-a1be-a7ce7560c251" />
+<img width="1600" height="770" alt="Resultado_Ariadna" src="https://github.com/user-attachments/assets/7c91ffbf-0ed9-43d0-afe9-2f9ee54294e9" />
+
 
 
 
