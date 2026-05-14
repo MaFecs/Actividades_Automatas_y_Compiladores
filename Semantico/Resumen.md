@@ -33,6 +33,13 @@ La construcción de un analizador semántico robusto suele seguir una arquitectu
 - Aho, A. V., Lam, M. S., Sethi, R., & Ullman, J. D. (2008). Compiladores: Principios, técnicas y herramientas (2a ed.). Pearson Educación.
 - Louden, K. C. (2004). Construcción de compiladores: Principios y práctica. Thomson. 
 
+### Cuestionario
+https://docs.google.com/forms/d/e/1FAIpQLSejF8Zgb2b7CXiHNgm9KSgWEgrftJnLjA-yqxSVEGlMsuTEOw/viewform?usp=dialog
+
+### Resultados del cuestionario
+<img width="1919" height="907" alt="Resultado_Fernanda" src="https://github.com/user-attachments/assets/72808eec-4423-44b7-bc9a-10e79ab20a56" />
+<img width="702" height="1600" alt="Resultado_David" src="https://github.com/user-attachments/assets/aef6481b-6922-488f-8497-c61480d355f6" />
+<img width="702" height="1600" alt="Resultado_David" src="https://github.com/user-attachments/assets/7bbe810b-e607-45a7-a1be-a7ce7560c251" />
 
 
 
